@@ -10,6 +10,7 @@ const isPrime = (number) => {
   return true
 }
 
+
 const number = Array.from({length: 100}, (_, index) => index + 1)
 const primeNumbers = number.filter(isPrime)
 console.log(primeNumbers)

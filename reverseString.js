@@ -9,5 +9,5 @@ const reverseString = str => {
       }
       return b;
     }
+
 console.log(reverseString("Hello, I’m Jappy-Lappy-Happy"))
-console.log(reverseString("Hello, I’m Jappy-Lappysdtfgyjhkml;,/.y"))
