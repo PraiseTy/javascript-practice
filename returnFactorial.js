@@ -3,7 +3,7 @@ const printNum = (num) =>{
         return 1
     
     
-    for (i = num - 1; i > 1; i--){
+    for (let i = num - 1; i > 1; i--){
         num *= i    
     }
     return num
