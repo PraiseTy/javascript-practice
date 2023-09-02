@@ -1,18 +1,15 @@
-let isPrime = true;
- 
-let i =2;
-while(i <= 100){
-  let j=2;
-  while(j < i - 1){
-    if(i % j == 0){
-      isPrime = false;
-      break;
-    }
-    j++;
+const isPrime = (number) => {
+  if (number == 1){
+      return false
   }
-  if(isPrime){
-    console.log(i);
+  for (let i = 2; i <= Math.sqrt(number); i++){
+      if (number % i == 0){
+          return false
+      }
   }
-  isPrime = true;
-  i++;
+  return true
 }
+
+const number = Array.from({length: 100}, (_, index) => index + 1)
+const primeNumbers = number.filter(isPrime)
+console.log(primeNumbers)

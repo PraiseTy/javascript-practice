@@ -6,7 +6,7 @@ const getlargestNumbers = (arr = []) => {
             secondLargestNumber = largestNumber
             largestNumber = arr[i]
         }
-        else if (arr[i] > secondLargestNumber && arr[i] != largestNumber){
+        else if (arr[i] > secondLargestNumber && arr[i] !== largestNumber){
             secondLargestNumber = arr[i]
         }
     }
