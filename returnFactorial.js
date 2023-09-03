@@ -1,3 +1,4 @@
+// added this comment so i can commit this file again with the corrections already made
 const printNum = (num) =>{
     if (num <= 0 || num === 1)
         return 1

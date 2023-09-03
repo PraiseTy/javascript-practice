@@ -1,12 +1,4 @@
-const removeDuplicate = (str) =>{
-    let mystr = ""
-    for (let char of str){
-        if (mystr.includes(char)== false){
-            mystr += char
-        }
-    }
-    return mystr
-}
+const removeDuplicate = (str) => [...new Set(str)].join('')
 
 console.log(removeDuplicate("aabbbcccdeeeee"))
 console.log(removeDuplicate("ghiiikkkl"))
