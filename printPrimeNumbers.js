@@ -1,3 +1,4 @@
+// added this comment so i can commit this file again with the corrections already made
 const isPrime = (number) => {
   if (number == 1){
       return false
