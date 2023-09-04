@@ -1,11 +1,7 @@
-const allNumbers = (arr = []) =>{
-    let sumNum = 0
-    for (i = 0; i < arr.length; i++){
-        sumNum += arr[i]
-    }
-    return sumNum
+const allNumbers = (arr) => {
+    return arr.reduce((number, total) => number + total, 0)
 }
-
+  
 console.log(allNumbers([1, 2, 3, 4, 5]));
 console.log(allNumbers([4, -2, 0, 20, 14, 6, 7, -4, 24, 10]))
 console.log(allNumbers([]))
